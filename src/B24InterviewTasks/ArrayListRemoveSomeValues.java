@@ -18,7 +18,7 @@ Given a list of Integers 1, 2, 3, 4, 5, 6 ....etc. remove all values greater tha
 
         for (int i = 0; i < list.size(); i++) {
 
-            if (list.get(i) < 100) {
+            if (list.get(i) <= 100) {
 
                 listNew.add(list.get(i));
 

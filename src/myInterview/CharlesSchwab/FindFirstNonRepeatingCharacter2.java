@@ -4,7 +4,7 @@ public class FindFirstNonRepeatingCharacter2 {
 
     public static void main(String[] args) {
 
-        firstUniqChar("leetcodelj");
+        firstUniqChar("zeynabzeyna ");
 
     }
 

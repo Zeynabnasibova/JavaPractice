@@ -6,45 +6,52 @@ import java.util.Stack;
 
 public class BalanceBrackets {
 
-    /*
-    * [IQ] Create a method that will accept a String of brackets. Determine if the brackets are balanced. Brackets are balanced if the closing bracket matches the opening one.
+        /**
+         17.1 Balanced String. This question became very popular lately. The program should find out if an input string is balanced or not.
+         */
+        /**
+         * Check for balanced parentheses in an expression
+         */
+   /* Algorithm
+1. store each character of s into stack <char> letters
+2. check if letters.top() == "[{(<" (open bracket) - if yes - int open++;
+3. check if letters.top() == "]})>" (closed bracket) - if yes int close++;
+4. letters.pop();
+5. if letters.empty() { if (open == close) { return true; }
+    else return false;
+*/
+        public static boolean isValid(String str) {
 
-https://www.hackerrank.com/challenges/balanced-brackets/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=stacks-queues
+            if (str == null || str.length() == 0) {
+                return true;
+            }
 
-Ex: {([])} -> balanced
-    {[(])} -> not balanced
-HackerRank
-Balanced Brackets | HackerRank
-Given a string containing three types of brackets, determine if it is balanced.
-
-     */
-
-    public boolean isBalanced(String str){
-
-        Map<Character,Character> map = new HashMap<>();
-        map.put('{', '{');
-        map.put('(', ')');
-        map.put('[', ']');
-        //Stack - a collection type. Implements "List" interface, extends vector class
-        //Stack - The stack is a linear data structure that is used to store the collection of objects. It is based on Last in First Out
-        Stack<Character> stack = new Stack<>();
-        /*
-        {([])}
-        charAt 1 --> (
-                 stack:
-                     [
-                     (
-                     {
-          */
-        for(int i = 0; i < str.length(); i++){
-            if(map.containsKey(str.charAt(i))){
-                stack.push(str.charAt(i));
-            }else{
-                if(stack.isEmpty() || str.charAt(i) != stack.pop()){ // ] != [
-                    return  false;
+            int count = 0;
+            int i = 0;
+            while (i < str.length()) {
+                char ch = str.charAt(i);
+                if (ch == '(' || ch == '[' || ch == '{') {
+                    count++;
+                } else if (ch == ')' || ch == ']' || ch == '}') {
+                    if (count == 0)
+                        return false;
+                    else
+                        count--;
                 }
+                i++;
+            }
+
+            if (count != 0) {
+                return false;
+            } else {
+                return true;
             }
         }
-        return stack.isEmpty();
+
+        public static void main(String[] args) {
+            String str = "{((BCD)A[E)]}";
+            System.out.println("isValid: " + isValid(str));
+            str = ")(PH)N(X)";
+            System.out.println("isValid: " + isValid(str));
+        }
     }
-}

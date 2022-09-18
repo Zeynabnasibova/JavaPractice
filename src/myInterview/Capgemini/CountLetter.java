@@ -1,5 +1,6 @@
 package myInterview.Capgemini;
 
+
 import java.util.*;
 
 public class CountLetter {
@@ -25,7 +26,7 @@ public class CountLetter {
 
         String [] strArr = str.split("");
 
-        List<String>list = new ArrayList<String>(Arrays.asList(strArr));
+        List<String> list = new ArrayList<String>(Arrays.asList(strArr));
 
         Map<String,Integer>map = new LinkedHashMap<>();
 

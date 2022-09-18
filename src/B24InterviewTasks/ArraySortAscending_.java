@@ -2,7 +2,7 @@ package B24InterviewTasks;
 
 import java.util.Arrays;
 
-public class ArraySortAscending {
+public class ArraySortAscending_ {
 
     /*
   Array -- Sort Ascending
