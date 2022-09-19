@@ -1,6 +1,6 @@
 package B24InterviewTasks;
 
-public class RemoveDuplicate {
+public class RemoveDuplicateString1 {
     /*
     Q3: String -- Remove Duplicates.
     Write a return method that can remove the duplicated values from String

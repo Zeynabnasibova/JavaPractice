@@ -2,7 +2,7 @@ package B24InterviewTasks;
 
 import java.util.Arrays;
 
-public class NumbersFINRA3_ {
+public class FINRA3 {
 
     public static void FINRA() {
 

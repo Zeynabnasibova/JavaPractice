@@ -1,6 +1,6 @@
 package B24InterviewTasks;
 
-public class ReverseString4 {
+public class ReverseString1 {
 
     /*
     Q5: String -- Reverse

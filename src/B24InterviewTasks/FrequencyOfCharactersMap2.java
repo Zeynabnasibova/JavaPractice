@@ -3,7 +3,7 @@ package B24InterviewTasks;
 import java.util.HashMap;
 import java.util.Map;
 
-public class FrequencyOfCharactersMap {
+public class FrequencyOfCharactersMap2 {
   /*
 Write a method that prints the frequency of each character from a String
  */
@@ -43,7 +43,7 @@ Write a method that prints the frequency of each character from a String
 
     public static void main(String[] args) {
 
-        FrequencyOfCharactersMap obj = new FrequencyOfCharactersMap();
+        FrequencyOfCharactersMap2 obj = new FrequencyOfCharactersMap2();
 
         String str = "apple";
         obj.frequencyOfChar(str);

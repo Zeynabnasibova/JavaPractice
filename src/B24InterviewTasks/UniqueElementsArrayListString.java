@@ -3,7 +3,7 @@ package B24InterviewTasks;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class UniqueElementsArrayListString2 {
+public class UniqueElementsArrayListString {
     /**
      Find unique elements in ArrayList Java
      */

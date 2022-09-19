@@ -3,7 +3,7 @@ package B24InterviewTasks;
 import java.util.Arrays;
 import java.util.Collections;
 
-public class UniqueCharacterString4 {
+public class UniqueCharacterString1 {
 
 
     public static String Unique(String str) {

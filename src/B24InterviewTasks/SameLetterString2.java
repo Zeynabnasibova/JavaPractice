@@ -3,7 +3,7 @@ package B24InterviewTasks;
 import java.util.Arrays;
 import java.util.TreeSet;
 
-public class SameLetterString {
+public class SameLetterString2 {
 
 
 

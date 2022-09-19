@@ -38,7 +38,7 @@ public class ArmstrongNumber {
                 //15 % 10 = 5
                 //1 % 10 = 1
 
-                sumOfNumbersCub = sumOfNumbersCub + remainder * remainder * remainder;
+                sumOfNumbersCub +=  remainder * remainder * remainder;
                 //       0 + 3 * 3 * 3 = 27
                 //       27 + 5 * 5 * 5 = 27 + 125  = 152
                 //      152 + 1 * 1 * 1 = 153

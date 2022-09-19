@@ -33,10 +33,11 @@ public class BalanceBrackets {
                 if (ch == '(' || ch == '[' || ch == '{') {
                     count++;
                 } else if (ch == ')' || ch == ']' || ch == '}') {
-                    if (count == 0)
+                    if (count == 0) {
                         return false;
-                    else
+                    } else {
                         count--;
+                    }
                 }
                 i++;
             }

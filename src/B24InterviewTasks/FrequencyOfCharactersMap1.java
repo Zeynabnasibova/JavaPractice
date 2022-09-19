@@ -3,7 +3,7 @@ package B24InterviewTasks;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
-public class FrequencyOfCharacters2 {
+public class FrequencyOfCharactersMap1 {
     /**
      * 2. Map -- Frequency of Characters
      * Write a method that prints the frequency of each character from a String

@@ -2,7 +2,7 @@ package B24InterviewTasks;
 
 import java.util.Arrays;
 
-public class SameLettersString4 {
+public class SameLettersString1 {
 /*
     Write a return method that check if a string is build out of the same letters as another string.
 

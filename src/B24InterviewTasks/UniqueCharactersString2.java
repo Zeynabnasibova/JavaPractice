@@ -1,6 +1,6 @@
 package B24InterviewTasks;
 
-public class UniqueCharactersString {
+public class UniqueCharactersString2 {
     /*
     Q4: String -- Find the unique
     Write a return method that can find the unique characters from the String

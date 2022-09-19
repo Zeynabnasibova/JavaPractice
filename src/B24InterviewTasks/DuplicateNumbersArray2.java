@@ -3,10 +3,10 @@ package B24InterviewTasks;
 import java.util.HashSet;
 import java.util.Set;
 
-public class DuplicateNumbersArray {
+public class DuplicateNumbersArray2 {
 
     public static void main(String[] args) {
-        Integer[] array = {1,2,3,4,5,6,7,8,2,2,3};  //input 1
+        Integer[] array = {1,2,3,4,5,6,7,8,2,2,3,10,10};  //input 1
         int size = array.length;              //input 2
 
         Set<Integer> set = new HashSet<Integer>();

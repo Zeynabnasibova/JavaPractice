@@ -1,13 +1,13 @@
 package B24InterviewTasks;
 
-public class DuplicateElementsArray {
+public class DuplicateNumbersArray1 {
     /**
      * Program to print the duplicate elements of an array.
      */
 
     public static String duplicateElement(int [] arr){
 
-        //   int [] arr = new int [] {1, 2, 3, 4, 2, 7, 8, 8, 3};
+        //   int [] arr = new int [] {1, 2, 3, 4, 2, 7, 8, 8, 3,10,10};
         String duplicate = "";
 
         for(int i = 0; i < arr.length; i++){
@@ -26,7 +26,7 @@ public class DuplicateElementsArray {
 
     public static void main(String[] args) {
 
-        int [] arr = new int [] {1, 2, 3, 4, 2, 7, 8, 8, 3};
+        int [] arr = new int [] {1, 2, 3, 4, 2, 7, 8, 8, 3,10,10};
 
         System.out.println(duplicateElement(arr));
     }

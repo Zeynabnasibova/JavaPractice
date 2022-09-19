@@ -3,7 +3,7 @@ package B24InterviewTasks;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class RemoveAhmedArrayList2 {
+public class RemoveAhmedArrayList {
 
     /*
 Given a list of people names: "Ahmed", "John", Eric", "Ahmed".....

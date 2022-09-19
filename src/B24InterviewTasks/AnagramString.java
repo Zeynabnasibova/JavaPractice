@@ -7,7 +7,7 @@ public class AnagramString {
      . Two string anagram. An anagram is when all the letters in one string exist in another but the order of letters does not matter. Write a method that will accept two string arguments and will return true if they are anagram and false if they are not.
      */
 
-    public static boolean anagram (String str1, String str2 ) {
+    public static boolean areAnagram (String str1, String str2 ) {
 
         String [] str1Arr = str1.split("");
         String [] str2Arr = str2.split("");
@@ -30,6 +30,6 @@ public class AnagramString {
 
         String str1 = "listen";
         String str2 = "silnet";
-        System.out.println(anagram(str1,str2));
+        System.out.println(areAnagram(str1,str2));
     }
 }
