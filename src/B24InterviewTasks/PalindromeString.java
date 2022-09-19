@@ -1,28 +1,33 @@
 package B24InterviewTasks;
 
 public class PalindromeString {
-  /*
-    Java palindrome string example
-
-To check palindrome string, reverse the String characters. Now use String.equals() method to verify if given string was palindrome or not.
+    /**
+     4.String palindrome. A palindrome is a word, phrase, number, or sequence of words that reads the same backward as forward
      */
 
-    public static void main(String[] args) {
 
-        System.out.println( isPalindromeString("howtodoinjava") );
-        System.out.println( isPalindromeString("abcba") );
-    }
-
-    public static boolean isPalindromeString(String originalString) {
-
+    public static boolean palindrome(String str){
 
         String reverse = "";
 
-        int length = originalString.length();
+        for(int i = str.length()-1; i >= 0; i--){
 
-        for ( int i = length - 1; i >= 0; i-- )
-            reverse = reverse + originalString.charAt(i);
+            reverse += str.charAt(i);
 
-        return originalString.equals(reverse);
+        }
+        if(reverse.equals(str)){
+            return true;
+
+        }else{
+
+            return false;
+        }
+    }
+
+    public static void main(String[] args) {
+
+        String str = "ana";
+
+        System.out.println(palindrome(str));
     }
 }
