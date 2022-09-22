@@ -2,7 +2,7 @@ package B24InterviewTasks;
 
 import java.util.Arrays;
 
-public class SortAscendingArray3 {
+public class SortAscendingArray {
 
     /*
     Array -- Sort Ascending
@@ -23,7 +23,7 @@ arr = Sort(arr);==>{ 7, 8, 9, 10};
 
     public static int[] sortAscending(int[] arr) {
 
-        arr = new int []{10, 9, 8, 7};
+        arr = new int []{78, 34, 1, 3, 90, 34, -1, -4, 6, 55, 20, -65};
 
         int temp = 0;
 

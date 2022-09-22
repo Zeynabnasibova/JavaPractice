@@ -3,7 +3,7 @@ package B24InterviewTasks;
 import java.util.HashMap;
 import java.util.Map;
 
-public class CountLettersMap {
+public class CountLettersMap3 {
     /**
      Count letters(Map). Write a method that will accept a string as an argument. The method will count the number of appearances of each char and return map. The key will be a letter and the value will be a number of appearances in the string. See input and output in the example
      */

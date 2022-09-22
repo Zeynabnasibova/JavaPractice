@@ -2,7 +2,7 @@ package B24InterviewTasks;
 
 import java.util.Scanner;
 
-public class NumberDivisibleBy3515 {
+public class NumberDivisibleBy3or5or15 {
 
     /*
     3. Numbers -- Divisible by 3, 5, 15

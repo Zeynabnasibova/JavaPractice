@@ -1,41 +1,29 @@
 package B24InterviewTasks;
 
-import java.util.Scanner;
-
 public class SumOfDigitsInAString2 {
-
-    /*
-    Q8:String -- sum of digits in a string: Write a method that can return the sum of the digits in a string.
-
-     */
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        String s1 = sc.nextLine();
-        getvalues(s1);
-    }
 
-    public static void getvalues(String s1) {
+
+        String str1 = "dhj34dfhf9fs";
+
+        char[] c = str1.toCharArray();
 
         int sum = 0;
 
-        for (int i = 0; i < s1.length(); i++) {
+        for (int i = 0; i < c.length; i++) {
 
-            char a = s1.charAt(i);
+            if (Character.isDigit(c[i])) {
 
-            if (Character.isDigit(a)) {
+                System.out.print("Digits in the String : " + c[i]);
 
-                int b = Integer.parseInt(String.valueOf(a));
+                System.out.println();
 
-                sum = sum + b;
+                int a = Integer.parseInt(String.valueOf(c[i]));
+
+                sum = sum + a;
             }
         }
-        if (sum == 0) {
 
-            System.out.println(-1);
-
-        } else {
-            System.out.println(sum);
-
-        }
+        System.out.println("Sum of Digits is : " + sum);
     }
 }

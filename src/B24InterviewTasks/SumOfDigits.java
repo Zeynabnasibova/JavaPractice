@@ -2,7 +2,7 @@ package B24InterviewTasks;
 
 import java.util.Scanner;
 
-public class SumOfDigits1 {
+public class SumOfDigits {
     public static void main(String args[]) {
 
 

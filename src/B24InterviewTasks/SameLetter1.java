@@ -2,7 +2,7 @@ package B24InterviewTasks;
 
 import java.util.Arrays;
 
-public class SameLetter {
+public class SameLetter1 {
 
     //I call my method inside the main method
     //Which evaluated true or false

@@ -2,6 +2,8 @@ package B24InterviewTasks;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
 
 public class UniqueElementsArrayListString {
     /**
@@ -9,9 +11,14 @@ public class UniqueElementsArrayListString {
      */
     public static void main(String[] args) {
 
-        ArrayList<String> list = new ArrayList<>(Arrays.asList("A","A","A","B","B","B","C","C","C","D","E","F"));
+        ArrayList<String> list = new ArrayList<>(Arrays.asList("AB", "A", "A", "B", "B", "B", "C", "C", "C", "D", "E", "F"));
+        System.out.println(allUnique(list));
 
-        String unique = "";
+    }
+    public static Map<String,Integer> allUnique(ArrayList<String>list){
+
+        Map<String,Integer> unique = new HashMap<>();
+
         for (int i = 0; i < list.size(); i++) {
             int count = 0;
             for (int j = 0; j < list.size(); j++) {
@@ -20,10 +27,9 @@ public class UniqueElementsArrayListString {
                 }
             }
             if (count == 1) {
-                unique += list.get(i) + " ";
-            }
+unique.put(list.get(i),count);            }
         }
-        System.out.println(unique);
+        return unique;
     }
 
 }

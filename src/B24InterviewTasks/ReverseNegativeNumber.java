@@ -1,6 +1,6 @@
 package B24InterviewTasks;
 
-public class ReverseNegativeNumber2 {
+public class ReverseNegativeNumber {
     public static void main(String[] args) {
 
         int number = -123;

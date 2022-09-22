@@ -1,15 +1,22 @@
 package B24InterviewTasks;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class UniqueElementsArrayInt {
     /**
      Find unique elements in array Java
      */
     public static void main(String[] args) {
 
-        int [] arr = new int [] {1, 2, 3, 4, 5, 6, 7, 7,1};
+        int[] arr = new int[]{1, 2, 3, 4, 5, 6, 7, 7, 1};
+        System.out.println(allUnique(arr));
 
+    }
+        public static Map<Integer,Integer> allUnique(int[] arr){
 
-        String unique = "";
+Map<Integer,Integer> unique = new HashMap<>();
+      //  String unique = "";
         for (int i = 0; i < arr.length; i++) {
             int count = 0;
             for (int j = 0; j < arr.length; j++) {
@@ -18,10 +25,11 @@ public class UniqueElementsArrayInt {
                 }
             }
             if (count == 1) {
-                unique += arr[i] + " ";
+                unique.put(arr[i],count);
+           //     unique += arr[i] + " ";
             }
         }
-        System.out.println(unique);
+  return unique;
     }
 
 }
