@@ -1,6 +1,6 @@
 package B24InterviewTasks;
 
-public class PasswordValidation {
+public class PasswordValidation1 {
     /*
     Q7:String -- Password Validation Task 1: Write a return method that can verify if a password is valid or not.
 Requirements:
@@ -19,8 +19,8 @@ Requirements:
     public static boolean isValidPasword(String password) {
         //String password = "Zeynab123,";
 
-        // String lowercase = "(.*[a-z].*)";//A regular expression is a sequence of characters that specifies a search pattern.
-        String lowercase = "abcdefghijklmnopqrstuvwxyz";//I can write like that
+         String lowercase = "(.*[a-z].*)";//A regular expression is a sequence of characters that specifies a search pattern.
+       // String lowercase = "abcdefghijklmnopqrstuvwxyz";//I can write like that
 
         String uppercase = "(.*[A-Z].*)";
 

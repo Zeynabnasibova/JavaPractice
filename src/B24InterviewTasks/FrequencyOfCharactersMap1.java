@@ -1,5 +1,6 @@
 package B24InterviewTasks;
 
+import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
@@ -9,9 +10,12 @@ public class FrequencyOfCharactersMap1 {
      * Write a method that prints the frequency of each character from a String
      */
 
+    public static void main(String[] args) {
+String str = "apple";
+        frequencyTest(str);
+    }
 
-
-    public static void FrequencyTest(String  str ) {
+    public static void frequencyTest(String  str ) {
 
         Map<Character, Integer> map = new LinkedHashMap<>();
 

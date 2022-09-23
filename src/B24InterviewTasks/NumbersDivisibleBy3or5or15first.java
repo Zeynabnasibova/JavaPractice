@@ -13,26 +13,29 @@ public class NumbersDivisibleBy3or5or15first {
 
         int[] arr = new int[100];
 
-        for(int i=0; i < arr.length; i++)
+        for(int i=0; i < arr.length; i++) {
 
-            arr[i] = i+1;
+            arr[i] = i + 1;
 
 
+        }
+        for(int i = 0; i < arr.length; i++) {
 
-        for(int each: arr) {
+            if (arr[i] % 15 == 0 && arr[i] % 3 == 0) {
 
-            if(each %15==0 && each %3==0)
+                divisibleBy15 += arr[i] + " ";
 
-                divisibleBy15+= each+" ";
+            }
+            if (arr[i] % 5 == 0 && arr[i] % 15 != 0) {
 
-            if(each %5==0 && each % 15!=0)
+                divisibleBy5 += arr[i] + " ";
 
-                divisibleBy5 += each+" ";
+            }
+            if (arr[i] % 3 == 0 && arr[i] % 15 != 0) {
 
-            if(each%3==0 && each %15!=0)
+                divisibleBy3 += arr[i] + " ";
 
-                divisibleBy3 += each+" ";
-
+            }
         }
 
         System.out.println("Divisible By 15: "+divisibleBy15);

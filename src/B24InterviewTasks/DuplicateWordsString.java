@@ -1,36 +1,52 @@
 package B24InterviewTasks;
 
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
+
 public class DuplicateWordsString {
     /**
      * Program to find the duplicate words in a string
      */
-
     public static void main(String[] args) {
-        String string = "Big black bug bit a big black dog on his big black nose";
-        int count;
 
-        //Converts the string into lowercase
-        string = string.toLowerCase();
+        String str = "The quick brown fox jumped under the nearby tree.What the fox did next surprised the crowd. The silence was followed by the applause. Applause that lasted for minutes. The fox blushed under the tree.";
+
+        str = str.replaceAll("\\.","").toLowerCase();
+
+        String [] strArr = str.split(" ");
+
+        System.out.println(Arrays.toString(strArr));
+
+        Map<String,Integer> map = new HashMap<>();
 
 
-        //Split the string into words using built-in function
-        String words[] = string.split(" ");
+        for(int i = 0; i < strArr.length; i++){
 
-        System.out.println("Duplicate words in a given string : ");
-        for(int i = 0; i < words.length; i++) {
-            count = 1;
-            for(int j = i+1; j < words.length; j++) {
-                if(words[i].equals(words[j])) {
+            int count = 0;
+
+            for(int j = 0; j < strArr.length; j++){
+
+
+                if(strArr[i].equals(strArr[j])){
+
                     count++;
-                    //Set words[j] to 0 to avoid printing visited word
-                    words[j] = "0";
                 }
             }
+            if(count==1){
 
-            //Displays the duplicate word if count is greater than 1
-            if(count > 1 && words[i] != "0")
-                System.out.println(words[i]);
+                map.remove(strArr[i]);
+
+            }else{
+
+                map.put(strArr[i],count);
+
+            }
         }
+        System.out.println(map);
+        System.out.println(map.keySet().toString());
+        System.out.println(map.values().toString());
+        System.out.println(map.keySet());
+
     }
 }
-
