@@ -19,6 +19,7 @@ public class RemoveAhmedIterator {
             if(it.next().equals("Ahmed")) {
 
                 it.remove();
+
             }
 
         }
