@@ -25,7 +25,8 @@ public class RemoveDuplicatesArrayListString {
                 nonduplicate.add(list.get(i));
             }
         }
-        System.out.println(nonduplicate);
+list=nonduplicate;
+        System.out.println(list);
     }
 
 }

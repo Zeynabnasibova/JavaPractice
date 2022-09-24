@@ -21,7 +21,6 @@ arr = Sort(arr);==>{90, 20, 10, 8, 7};
 
         int temp = 0;
 
-
         for (int i = 0; i < arr.length ; i++) {//for loop iterates through each element
 
             for (int j = i; j < arr.length; j++) {//compares first element to each additional element
