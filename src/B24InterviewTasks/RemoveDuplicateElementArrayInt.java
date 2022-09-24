@@ -1,6 +1,7 @@
 package B24InterviewTasks;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class RemoveDuplicateElementArrayInt {
     /**
@@ -21,7 +22,11 @@ public class RemoveDuplicateElementArrayInt {
                 nonduplicate.add(arr[i]);
             }
         }
-        System.out.println(nonduplicate);
+        arr = new int [nonduplicate.size()];
+        for(int i = 0; i< nonduplicate.size();i++){
+            arr[i] = nonduplicate.get(i);
+        }
+        System.out.println(Arrays.toString(arr));
     }
 
 

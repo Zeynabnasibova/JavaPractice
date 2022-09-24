@@ -1,6 +1,6 @@
 package B24InterviewTasks;
 
-public class PalindromeNumber1 {
+public class PalindromeNumber {
     /**
      5.Number palindrome. A palindrome is a word, phrase, number, or sequence of words that reads the same backward as forward. The straight forward solution would be to convert number to string and use the above approach. Some interviewers will not allow to do it. So let’s take a look at what we can do here.
      */

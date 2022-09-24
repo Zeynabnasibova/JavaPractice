@@ -1,6 +1,6 @@
 package B24InterviewTasks;
 
-public class CountLetters1 {
+public class CountLetters {
 /*
 Write a method countLetters that can count letters in a given string and return a new string in the given format:
 

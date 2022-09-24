@@ -13,9 +13,7 @@ public class ReverseIntArray2 {
 
             System.out.print(reverse + " ");
 
-            //  int [] numArr = new int [reverse];
 
-            // System.out.println(Arrays.toString(numArr));
         }
 
 

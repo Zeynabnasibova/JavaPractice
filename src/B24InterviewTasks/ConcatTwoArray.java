@@ -2,7 +2,7 @@ package B24InterviewTasks;
 
 import java.util.Arrays;
 
-public class ConcatTwoArray2 {
+public class ConcatTwoArray {
 /*
 Write a return method that can concat two arrays
  */
@@ -13,7 +13,7 @@ Write a return method that can concat two arrays
         int[] arr2 = {4, 5, 6};
 
 
-        ConcatTwoArray2 obj = new ConcatTwoArray2();
+        ConcatTwoArray obj = new ConcatTwoArray();
         System.out.println(Arrays.toString(obj.conCat(arr1, arr2)));
     }
 

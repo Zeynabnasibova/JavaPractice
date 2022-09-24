@@ -17,13 +17,11 @@ public class SumOfDigitsInAString1 {
 
         for (int i = 0; i < str.length(); i++) {
 
-            char ch = str.charAt(i);
+            char [] ch = str.toCharArray();
 
-            if (Character.isDigit(ch)) { // check each index digit or not.if digit ->wrapper class metod
+            if (Character.isDigit(ch[i])) { // check each index digit or not.if digit ->wrapper class metod
 
-                System.out.println("Digitits in the string: " + ch);
-
-                int numStr = Integer.parseInt(String.valueOf(ch));//conver String to int. return wrapper class obj
+                int numStr = Integer.parseInt(String.valueOf(ch[i]));//conver String to int. return wrapper class obj
 
                 // int numStr = Integer.parseInt(""+ch);
 

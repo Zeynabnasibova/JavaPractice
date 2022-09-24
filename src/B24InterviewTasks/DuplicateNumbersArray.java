@@ -2,7 +2,7 @@ package B24InterviewTasks;
 
 import java.util.ArrayList;
 
-public class DuplicateNumbersArray1 {
+public class DuplicateNumbersArray {
     /**
      * Program to print the duplicate elements of an array.
      */

@@ -1,6 +1,7 @@
 package B24InterviewTasks;
 
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.TreeSet;
 
 public class SameLetter3 {
@@ -21,6 +22,7 @@ same("abc", "abb"); -> false:
             str2 = new TreeSet<String>(Arrays.asList( str2.split("") ) ).toString( );
 
             return  str1.equals(str2);
+
 
         }
     }

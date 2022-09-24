@@ -1,24 +1,30 @@
 package B24InterviewTasks;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 public class RemoveDuplicateElementArrayString {
     /**
      * Java Program to remove duplicate element in a String Array
      */
 
     public static void main(String[] args) {
-        String [] str = new String [] {"A","B","B","B"};
+        String [] str = new String [] {"AB","B","B","B"};
 
-
-        String nonduplicate = "";
+        ArrayList<String> nonduplicate = new ArrayList<>();
 
         for (int i = 0; i < str.length; i++) {
 
-            if (!nonduplicate.contains("" + str[i])) {
+            if (!nonduplicate.contains(str[i])) {
 
-                nonduplicate += str[i] + " ";
-            }
+                nonduplicate.add(str[i]);            }
         }
-        System.out.println(nonduplicate);
+        str = new String [nonduplicate.size()];
+        for(int i = 0; i < nonduplicate.size(); i++){
+
+            str[i] = nonduplicate.get(i);
+        }
+        System.out.println(Arrays.toString(str));
     }
 
 

@@ -1,6 +1,6 @@
 package B24InterviewTasks;
 
-public class FrequencyOfCharactersString1 {
+public class FrequencyOfCharactersStringMap {
 
     public static void main(String[] args) {
 

@@ -7,6 +7,18 @@ public class ReverseString2 {
       return new StringBuffer(str).reverse().toString();
 
   }
+
+    public static void main(String[] args) {
+        String word = "Hello World";
+
+        StringBuilder newWord = new StringBuilder(word);
+
+        newWord.reverse();
+
+        word = newWord.toString();
+
+        System.out.println(word);
+    }
 }
 /*
 Write a return method that can reverse  String

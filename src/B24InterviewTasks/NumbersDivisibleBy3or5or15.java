@@ -1,9 +1,6 @@
 package B24InterviewTasks;
 
-import java.util.ArrayList;
-import java.util.List;
-
-public class NumbersDivisibleBy3or5or15second {
+public class NumbersDivisibleBy3or5or15 {
 
 
     public static void main(String[] args) {
@@ -14,28 +11,31 @@ public class NumbersDivisibleBy3or5or15second {
 
         String divisibleBy3="";
 
-        List<Integer> list = new ArrayList<Integer>();
+        int[] arr = new int[100];
 
-        for(int i=0; i < 100; i++)
+        for(int i=0; i < arr.length; i++) {
 
-            list.add(i+1);
+            arr[i] = i + 1;
 
 
+        }
+        for(int i = 0; i < arr.length; i++) {
 
-        for(int each: list) {
+            if (arr[i] % 15 == 0 && arr[i] % 3 == 0) {
 
-            if(each %15==0 && each %3==0)
+                divisibleBy15 += arr[i] + " ";
 
-                divisibleBy15+= each+" ";
+            }
+            if (arr[i] % 5 == 0 && arr[i] % 15 != 0) {
 
-            if(each %5==0 && each % 15!=0)
+                divisibleBy5 += arr[i] + " ";
 
-                divisibleBy5 += each+" ";
+            }
+            if (arr[i] % 3 == 0 && arr[i] % 15 != 0) {
 
-            if(each%3==0 && each %15!=0)
+                divisibleBy3 += arr[i] + " ";
 
-                divisibleBy3 += each+" ";
-
+            }
         }
 
         System.out.println("Divisible By 15: "+divisibleBy15);
@@ -45,10 +45,7 @@ public class NumbersDivisibleBy3or5or15second {
         System.out.println("Divisible By 3: "+divisibleBy3);
 
     }
-
-
 }
-
 /*
 Write a program that can print the numbers between 1 ~ 100 that can be divisible by 3, 5, and 15.
 

@@ -17,7 +17,7 @@ public class DuplicateCharactersArrayList {
 
         for(int i = 0; i < list.size();i++){
 
-            if(!letter.contains("" + list.get(i))){ //chek
+            if(!letter.contains(list.get(i))){ //chek
 
 
                 letter.add(list.get(i));
